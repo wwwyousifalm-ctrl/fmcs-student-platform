@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Resources - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand" aria-label="FMCS Home">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="logo-img">
+        <span class="brand-title">FMCS Student Association</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggleBtn" class="btn-secondary" aria-label="Switch Language">العربية / EN</button>
+        <a href="login.html" class="btn-primary">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <section class="page-header">
+      <h1>Academic Resources & Study Repository</h1>
+      <p>Access curated lecture notes, reference textbooks, past examination papers, and lab manuals organized by
+        department.</p>
+    </section>
+
+    <div class="resource-control-section">
+      <div class="search-box-wrapper">
+        <input type="text" id="resourceSearch" class="form-control search-input"
+          placeholder="🔍 Search course name, code (e.g., CS 301), or topic..." aria-label="Search Resources">
+      </div>
+
+      <div class="filter-bar" role="tablist" aria-label="Department Filter">
+        <button class="filter-btn active" data-dept="all" role="tab" aria-selected="true">All Departments</button>
+        <button class="filter-btn" data-dept="cs" role="tab" aria-selected="false">Computer Science (CS)</button>
+        <button class="filter-btn" data-dept="math" role="tab" aria-selected="false">Mathematics & Computer Science
+          (MATH)</button>
+        <button class="filter-btn" data-dept="is" role="tab" aria-selected="false">Statistics & Computer Science (STAT)
+        </button>
+        <button class="filter-btn" data-dept="it" role="tab" aria-selected="false">Information Tech (IT)</button>
+      </div>
+    </div>
+
+    <div class="resources-grid" id="resourcesContainer">
+
+      <article class="resource-card" data-dept="cs">
+        <div class="resource-icon">📄</div>
+        <div class="resource-details">
+          <span class="course-code">CS 301</span>
+          <h3>Data Structures & Algorithm Design</h3>
+          <p class="resource-meta">PDF • 14.2 MB • Updated Semester 1, 2026</p>
+          <p class="resource-desc">Complete lecture notes on trees, graphs, sorting algorithms, and complexity analysis
+            (Big O notation).</p>
+        </div>
+        <div class="resource-action">
+          <a href="uploads/resources/cs301-lecture-notes.pdf" download class="btn-primary btn-sm">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="resource-card" data-dept="math">
+        <div class="resource-icon">📚</div>
+        <div class="resource-details">
+          <span class="course-code">MATH 202</span>
+          <h3>Linear Algebra & Calculus II - Exam Archive</h3>
+          <p class="resource-meta">ZIP Archive • 8.5 MB • 2020-2025 Solved Exams</p>
+          <p class="resource-desc">Collection of mid-term and final examination papers with step-by-step solution keys.
+          </p>
+        </div>
+        <div class="resource-action">
+          <a href="uploads/resources/math202-past-papers.zip" download class="btn-primary btn-sm">Download Archive</a>
+        </div>
+      </article>
+
+      <article class="resource-card" data-dept="it">
+        <div class="resource-icon">💻</div>
+        <div class="resource-details">
+          <span class="course-code">IT 405</span>
+          <h3>Web Engineering & Client-Server Systems Manual</h3>
+          <p class="resource-meta">PDF • 5.1 MB • Updated 2026</p>
+          <p class="resource-desc">Hands-on practical lab exercises for HTML5, CSS3, JavaScript ES6+, PHP 8, and MySQL
+            deployment.</p>
+        </div>
+        <div class="resource-action">
+          <a href="uploads/resources/it405-web-engineering-lab.pdf" download class="btn-primary btn-sm">Download PDF</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="footer-logo">
+        <p>&copy; 2026 Student Association, FMCS - University of Gezira. All rights reserved.</p>
+      </div>
+      <ul class="footer-links" role="navigation">
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

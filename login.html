@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body class="auth-body">
+  <main class="auth-container" role="main">
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="index.html" aria-label="Return to Home">
+          <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="auth-logo">
+        </a>
+        <h1>Member Login</h1>
+        <p>Sign in to access your FMCS portal and academic resources</p>
+      </div>
+      <form id="loginForm" action="login.php" method="POST" novalidate>
+        <div class="form-group">
+          <label for="email">University Email / Student ID</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="student@uofg.edu.sd">
+          <span class="error-message" id="emailError" role="alert"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required aria-required="true" placeholder="••••••••">
+          <span class="error-message" id="passwordError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn-primary w-100">Sign In</button>
+      </form>
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <p><a href="index.html">← Back to Home</a></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+CREATE DATABASE IF NOT EXISTS if0_43261920_fmcs CHARACTER
+SET
+  utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE if0_43261920_fmcs;
+
+-- Users Table
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fullname VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  student_id VARCHAR(50) NOT NULL UNIQUE,
+  department VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  role ENUM ('student', 'admin') DEFAULT 'student',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE = InnoDB;
+
+-- Academic Resources Table
+CREATE TABLE IF NOT EXISTS resources (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  course_code VARCHAR(20) NOT NULL,
+  title VARCHAR(200) NOT NULL,
+  department VARCHAR(50) NOT NULL,
+  file_size VARCHAR(50) NOT NULL,
+  file_path VARCHAR(255) NOT NULL,
+  uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE = InnoDB;

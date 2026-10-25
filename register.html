@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body class="auth-body">
+  <main class="auth-container" role="main">
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="index.html" aria-label="Return to Home">
+          <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="auth-logo">
+        </a>
+        <h1>Create Student Account</h1>
+        <p>Join the official FMCS Student Association portal</p>
+      </div>
+      <form id="registerForm" action="register.php" method="POST" novalidate>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required aria-required="true" placeholder="Mohammed Ahmed">
+        </div>
+        <div class="form-group">
+          <label for="email">University Email</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="student@uofg.edu.sd">
+        </div>
+        <div class="form-group">
+          <label for="student_id">Student ID</label>
+          <input type="text" id="student_id" name="student_id" required aria-required="true" placeholder="2021-CS-1234">
+        </div>
+        <div class="form-group">
+          <label for="department">Department</label>
+          <select id="department" name="department" required aria-required="true">
+            <option value="">Select Department</option>
+            <option value="cs">Computer Science</option>
+            <option value="math">Mathematics & Computer Science</option>
+            <option value="is">Statistics & Computer Science</option>
+            <option value="it">Information Technology</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required aria-required="true" placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn-primary w-100">Register Account</button>
+      </form>
+      <div class="auth-footer">
+        <p>Already have an account? <a href="login.html">Sign in here</a></p>
+        <p><a href="index.html">← Back to Home</a></p>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

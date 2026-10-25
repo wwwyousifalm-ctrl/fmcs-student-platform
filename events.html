@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand" aria-label="FMCS Home">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="logo-img">
+        <span class="brand-title">FMCS Student Association</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggleBtn" class="btn-secondary" aria-label="Switch Language">العربية / EN</button>
+        <a href="login.html" class="btn-primary">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <section class="page-header">
+      <h1>Academic & Technical Events</h1>
+      <p>Participate in our upcoming workshops, coding hackathons, scientific seminars, and student career fairs.</p>
+    </section>
+
+    <div class="filter-bar" role="tablist" aria-label="Event Categories">
+      <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Events</button>
+      <button class="filter-btn" data-filter="upcoming" role="tab" aria-selected="false">Upcoming</button>
+      <button class="filter-btn" data-filter="workshop" role="tab" aria-selected="false">Workshops</button>
+      <button class="filter-btn" data-filter="past" role="tab" aria-selected="false">Past Archives</button>
+    </div>
+
+    <div class="events-grid" id="eventsContainer">
+
+      <article class="event-card upcoming workshop">
+        <div class="event-badge">Workshop</div>
+        <div class="event-date">
+          <span class="day">15</span>
+          <span class="month">Nov</span>
+          <span class="year">2026</span>
+        </div>
+        <div class="event-body">
+          <h3>Annual UofG CodeCraft Hackathon</h3>
+          <p class="event-meta"> Lab 3, FMCS Building | 09:00 AM - 05:00 PM</p>
+          <p class="event-desc">A 24-hour algorithmic problem-solving and web application development competition
+            designed for undergraduate CS and IT students.</p>
+          <div class="event-actions">
+            <a href="contact.html" class="btn-primary btn-sm">Register Now</a>
+            <button class="btn-secondary btn-sm">View Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="event-card upcoming">
+        <div class="event-badge">Seminar</div>
+        <div class="event-date">
+          <span class="day">02</span>
+          <span class="month">Dec</span>
+          <span class="year">2026</span>
+        </div>
+        <div class="event-body">
+          <h3>Introduction to Applied Machine Learning & Data Science</h3>
+          <p class="event-meta"> Main FMCS Auditorium | 11:00 AM - 01:00 PM</p>
+          <p class="event-desc">Join guest faculty lecturers and alumni software engineers as they present foundational
+            concepts in Supervised Learning, Python NumPy/Pandas, and AI ethics.</p>
+          <div class="event-actions">
+            <a href="contact.html" class="btn-primary btn-sm">Register Now</a>
+            <button class="btn-secondary btn-sm">View Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="event-card past">
+        <div class="event-badge archive">Past Event</div>
+        <div class="event-date">
+          <span class="day">18</span>
+          <span class="month">Sep</span>
+          <span class="year">2026</span>
+        </div>
+        <div class="event-body">
+          <h3>Git, GitHub & Modular Software Architecture Bootcamp</h3>
+          <p class="event-meta"> Online (Zoom Session) | Archive Available</p>
+          <p class="event-desc">A practical hands-on workshop covering Git version control workflows, branching
+            strategy, pull requests, and modular project design for final year projects.</p>
+          <div class="event-actions">
+            <a href="resources.html" class="btn-secondary btn-sm">View Slides & Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="footer-logo">
+        <p>&copy; 2026 Student Association, FMCS - University of Gezira. All rights reserved.</p>
+      </div>
+      <ul class="footer-links" role="navigation">
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

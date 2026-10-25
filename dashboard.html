@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand" aria-label="FMCS Home">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="logo-img">
+        <span class="brand-title">FMCS Student Association</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggleBtn" class="btn-secondary" aria-label="Switch Language">العربية / EN</button>
+        <a href="login.html" class="btn-primary">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <section class="dashboard-welcome">
+      <div class="welcome-card">
+        <div class="student-profile-info">
+          <h2>Welcome back, Mohammed Ahmed!</h2>
+          <p class="student-meta">Department: <strong>Computer Science</strong> | Student ID:
+            <strong>2021-CS-1234</strong> | Status: <span class="status-active">Active Member</span>
+          </p>
+        </div>
+        <div class="quick-stats">
+          <div class="stat-box">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Enrolled Events</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Downloads</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="dashboard-grid py-4">
+
+      <div class="dashboard-card">
+        <div class="card-header">
+          <h3>📅 My Upcoming Event Registrations</h3>
+          <a href="events.html" class="link-sm">Browse All</a>
+        </div>
+        <ul class="dashboard-list">
+          <li>
+            <strong>Annual UofG CodeCraft Hackathon</strong>
+            <span class="list-meta">Nov 15, 2026 • Confirmed</span>
+          </li>
+          <li>
+            <strong>Applied Machine Learning Seminar</strong>
+            <span class="list-meta">Dec 02, 2026 • Registered</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-header">
+          <h3>📑 Bookmarked Academic Resources</h3>
+          <a href="resources.html" class="link-sm">Repository</a>
+        </div>
+        <ul class="dashboard-list">
+          <li>
+            <strong>CS 301 - Data Structures Lecture Notes</strong>
+            <span class="list-meta">Downloaded on Oct 10, 2026</span>
+          </li>
+          <li>
+            <strong>IT 405 - Web Engineering Lab Manual</strong>
+            <span class="list-meta">Downloaded on Oct 18, 2026</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dashboard-card full-width">
+        <div class="card-header">
+          <h3>📢 Member Noticeboard</h3>
+        </div>
+        <div class="notice-item">
+          <h4>Registration Open for Semester 1 Hackathon Teams</h4>
+          <p>Make sure to submit your team credentials before November 10, 2026, through your student profile.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="footer-logo">
+        <p>&copy; 2026 Student Association, FMCS - University of Gezira. All rights reserved.</p>
+      </div>
+      <ul class="footer-links" role="navigation">
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

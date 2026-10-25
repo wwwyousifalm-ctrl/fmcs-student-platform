@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Projects - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand" aria-label="FMCS Home">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="logo-img">
+        <span class="brand-title">FMCS Student Association</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggleBtn" class="btn-secondary" aria-label="Switch Language">العربية / EN</button>
+        <a href="login.html" class="btn-primary">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <section class="page-header">
+      <h1>Student Innovation & Open-Source Projects</h1>
+      <p>Explore open-source software, research systems, and senior graduation projects engineered by FMCS students.</p>
+    </section>
+
+    <div id="githubApiStatus" class="info-banner" role="status">
+      <span> Dynamic repositories loaded directly from Student Association GitHub Organization.</span>
+    </div>
+
+    <div class="projects-grid" id="githubProjectsGrid">
+
+      <article class="project-card">
+        <div class="project-header">
+          <span class="project-tag">PHP / MySQL</span>
+          <h3>FMCS Academic Resource Management System</h3>
+        </div>
+        <p class="project-desc">A web portal streamlining academic material distribution, past exam archiving, and
+          student query tracking built using PHP 8 and OOP principles.</p>
+        <div class="project-meta">
+          <span> 24 Stars</span>
+          <span> 12 Forks</span>
+        </div>
+        <a href="https://github.com/FMCS-UofG/academic-portal" target="_blank" rel="noopener"
+          class="btn-secondary btn-sm">
+          View on GitHub ↗
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <span class="project-tag">Python / ML</span>
+          <h3>Arabic NLP & Text Categorizer</h3>
+        </div>
+        <p class="project-desc">An open-source natural language processing tool tuned for analyzing Arabic scientific
+          literature and thesis abstract classification.</p>
+        <div class="project-meta">
+          <span> 45 Stars</span>
+          <span> 18 Forks</span>
+        </div>
+        <a href="https://github.com/FMCS-UofG/arabic-nlp-suite" target="_blank" rel="noopener"
+          class="btn-secondary btn-sm">
+          View on GitHub ↗
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <span class="project-tag">JavaScript / HTML5</span>
+          <h3>Interactive Matrix Algebra Solver</h3>
+        </div>
+        <p class="project-desc">A lightweight client-side educational tool designed for first-year mathematics students
+          to visualize matrix operations and eigenvalues.</p>
+        <div class="project-meta">
+          <span> 19 Stars</span>
+          <span> 5 Forks</span>
+        </div>
+        <a href="https://github.com/FMCS-UofG/matrix-solver" target="_blank" rel="noopener"
+          class="btn-secondary btn-sm">
+          View on GitHub ↗
+        </a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="footer-logo">
+        <p>&copy; 2026 Student Association, FMCS - University of Gezira. All rights reserved.</p>
+      </div>
+      <ul class="footer-links" role="navigation">
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

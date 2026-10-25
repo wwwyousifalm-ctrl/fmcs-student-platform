@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings & Preferences - FMCS Student Association</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/fmcs-logo.png">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand" aria-label="FMCS Home">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="logo-img">
+        <span class="brand-title" data-i18n="brandTitle">FMCS Student Association</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="about.html" data-i18n="navAbout">About</a></li>
+          <li><a href="events.html" data-i18n="navEvents">Events</a></li>
+          <li><a href="projects.html" data-i18n="navProjects">Projects</a></li>
+          <li><a href="resources.html" data-i18n="navResources">Resources</a></li>
+          <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+          <li><a href="dashboard.html" data-i18n="navDashboard">Dashboard</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="langToggleBtn" class="btn-secondary" aria-label="Switch Language" data-i18n="langToggle">العربية /
+          EN</button>
+        <a href="login.html" class="btn-primary" data-i18n="loginBtn">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container py-5">
+    <section class="page-header">
+      <h1>Platform Settings & Localization</h1>
+      <p>Customize your viewing language, layout orientation, UI appearance, and notification preferences.</p>
+    </section>
+
+    <div class="settings-wrapper">
+
+      <section class="settings-card">
+        <h2> Language & Regional Layout (اللغة والاتجاه)</h2>
+        <p class="settings-desc">Select your preferred system interface language. The layout will adapt dynamically to
+          RTL (Right-to-Left) or LTR (Left-to-Right).</p>
+        <div class="form-group">
+          <label for="languageSelect">Primary Interface Language</label>
+          <select id="languageSelect" class="form-control">
+            <option value="en">English (LTR - Left To Right)</option>
+            <option value="ar">العربية (RTL - Right To Left)</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="settings-card">
+        <h2> Visual Theme & Interface Style</h2>
+        <p class="settings-desc">Choose between the high-contrast academic light theme or the deep navy dark mode.</p>
+        <div class="form-group">
+          <label for="themeSelect">Color Theme</label>
+          <select id="themeSelect" class="form-control">
+            <option value="light">Academic Light (Navy & White)</option>
+            <option value="dark">Deep Navy Dark Mode</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="settings-card">
+        <h2> Notification Alerts</h2>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="notifyEvents" checked> Receive announcements for upcoming workshops and
+            hackathons.
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="notifyResources" checked> Receive alerts when new course notes and exam papers
+            are published.
+          </label>
+        </div>
+      </section>
+
+      <div class="settings-actions">
+        <button id="saveSettingsBtn" class="btn-primary">Save Preferences</button>
+        <span id="saveStatusMsg" class="status-msg" role="status"></span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <img src="assets/img/fmcs-logo.png" alt="FMCS Logo" class="footer-logo">
+        <p>&copy; 2026 Student Association, FMCS - University of Gezira. All rights reserved.</p>
+      </div>
+      <ul class="footer-links" role="navigation">
+        <li><a href="contact.html">Support</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
