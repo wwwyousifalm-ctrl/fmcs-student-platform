@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt = $pdo->prepare("INSERT INTO users (fullname, email, student_id, department, password) VALUES (?, ?, ?, ?, ?)");
         $stmt->execute([$fullname, $email, $student_id, $department, $hashedPassword]);
 
-        header('Location: ../login.html?registered=success');
+        header('Location: /login.html?registered=success');
         exit();
     } catch (\PDOException $e) {
         if ($e->getCode() == 23000) {

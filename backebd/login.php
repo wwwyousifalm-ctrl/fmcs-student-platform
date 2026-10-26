@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['department'] = $user['department'];
         $_SESSION['role'] = $user['role'];
 
-        header('Location: ../dashboard.html');
+        header('Location: /dashboard.html');
         exit();
     } else {
         die('Invalid email or password. <a href="../login.html">Try again</a>');
